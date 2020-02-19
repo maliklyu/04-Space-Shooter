@@ -8,7 +8,7 @@
 [ext_resource path="res://Scripts/Bullets.gd" type="Script" id=6]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=7]
 
-[node name=" Game" type="Node2D"]
+[node name="Game" type="Node2D"]
 
 [node name="Background" type="Node2D" parent="."]
 
@@ -67,7 +67,7 @@ visible = false
 [node name="HUD" type="Node2D" parent="."]
 script = ExtResource( 3 )
 
-[node name="Label" type="Label" parent="HUD"]
+[node name="Health" type="Label" parent="HUD"]
 margin_left = 8.0
 margin_top = 6.5
 margin_right = 80.0
