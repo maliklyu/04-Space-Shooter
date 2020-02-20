@@ -13,14 +13,16 @@
 [node name="Background" type="Node2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="Background"]
-position = Vector2( -35.5, -1.5 )
-scale = Vector2( 1.143, 1.143 )
+position = Vector2( -115.5, -13.5 )
+scale = Vector2( 2.39443, 2.39443 )
 texture = ExtResource( 1 )
 centered = false
 
 [node name="ColorRect" type="ColorRect" parent="Background"]
-margin_right = 663.0
-margin_bottom = 398.0
+margin_left = -114.0
+margin_top = -8.0
+margin_right = 1322.0
+margin_bottom = 854.0
 color = Color( 0, 0, 0, 0.501961 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -35,7 +37,7 @@ one_shot = true
 [node name="Enemy Bullets" type="Node2D" parent="."]
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( 341, 329 )
+position = Vector2( 543, 695 )
 script = ExtResource( 7 )
 __meta__ = {
 "_edit_group_": true

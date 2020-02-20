@@ -4,7 +4,7 @@ export var health = 100
 export var score = 0
 export var margin = 5
 export var y_range = 300
-export var acceleration = 0.5
+export var acceleration = 0.2
 
 var velocity = Vector2(0,0)
 
@@ -40,13 +40,13 @@ func _physics_process(delta):
 		b.position.y -= 25
 		get_node("/root/Game/Bullets").fire(b)
 		
-	if Input. is_action_just_pressed("Left"):
+	if Input. is_action_pressed("Left"):
 		velocity.x -= acceleration
-	if Input. is_action_just_pressed("Right"):
+	if Input. is_action_pressed("Right"):
 		velocity.x += acceleration
-	if Input. is_action_just_pressed("Up"):
+	if Input. is_action_pressed("Up"):
 		velocity.y -= acceleration
-	if Input. is_action_just_pressed("Down"):
+	if Input. is_action_pressed("Down"):
 		velocity.y += acceleration
 		
 	if position.x < margin:
